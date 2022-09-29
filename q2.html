@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tipo_invest = Number(prompt(`Tipo de investimento:
+        Tipo - 1 Poupança - 5%
+        Tipo - 2 Fundo de renda fixa - 10%`))
+        const valor = Number(prompt("Valor do investimenro: "))
+
+        if (tipo_invest == 1){
+            var valor_corrigido = valor + (valor*0.05)
+            
+        }
+        else if (tipo_invest == 2){
+            var valor_corrigido = valor + (valor*0.1)
+        }
+        alert(`valor corrigdo: ${valor_corrigido}`)
+            
+
+    </script>
+</body>
+</html>
